@@ -4,6 +4,7 @@
 #define PHP_OPBINLOADER_H
 
 #include "php.h"
+#include "ext/opcache/ZendAccelerator.h"
 
 #define _S(str) str, sizeof(str) - 1
 

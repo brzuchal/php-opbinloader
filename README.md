@@ -11,6 +11,11 @@ phpize
 make
 ```
 
+> Note! If `opcache` ext sources are located in non-standard path use CPFLAGS env during `./configure` like that:
+> ```bash
+> CPPFLAGS=-I/home/mbrzuchalski/.phpbrew/build/php-7.0.0/ ./configure
+> ```
+
 ## Contributing
 
 After build it is possible to run simple test for loading with PHP:

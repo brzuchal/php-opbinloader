@@ -13,6 +13,7 @@
 #include "zend_constants.h"
 #include "zend_ini.h"
 #include "zend_interfaces.h"
+#include "ext/opcache/ZendAccelerator.h"
 /* }}} */
 /* {{{ Global functions */
 ZEND_FUNCTION(opcache_compile)
