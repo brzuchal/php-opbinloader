@@ -11,6 +11,37 @@ phpize
 make
 ```
 
+Then run simple test for loading with PHP:
+
+```bash
+php -n -d extension_dir=./modules -d extension=opbinloader.so -m
+```
+
+> You should notice `opbinloader` in modules.
+
+You can also get extension information with:
+
+```bash
+php -n -d extension_dir=./modules -d extension=opbinloader.so --re opbinloader
+```
+
+Extension information:
+
+```
+Extension [ <persistent> extension #39 opbinloader version 1.0 ] {
+
+  - Functions {
+    Function [ <internal:opbinloader> function opcache_compile ] {
+
+      - Parameters [2] {
+        Parameter #0 [ <required> $source ]
+        Parameter #1 [ <required> $destination ]
+      }
+    }
+  }
+}
+```
+
 ## License
 
 The MIT License (MIT)
