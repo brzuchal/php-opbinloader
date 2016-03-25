@@ -11,7 +11,9 @@ phpize
 make
 ```
 
-Then run simple test for loading with PHP:
+## Contributing
+
+After build it is possible to run simple test for loading with PHP:
 
 ```bash
 php -n -d extension_dir=./modules -d extension=opbinloader.so -m
