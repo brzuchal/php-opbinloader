@@ -1,6 +1,6 @@
-PHP_ARG_ENABLE(opbinloader, [whether to enable opbinloader support],
-[  --enable-opbinloader          Enable opbinloader support])
+PHP_ARG_ENABLE(opdump, [whether to enable opdump support],
+[  --enable-opdump            Enable opdump support])
 
-if test "$PHP_OPBINLOADER" = "yes"; then
-  PHP_NEW_EXTENSION(opbinloader, php_opbinloader.c,$ext_shared,,$P2C_CFLAGS)
+if test "$PHP_OPDUMP" = "yes"; then
+  PHP_NEW_EXTENSION(opdump, php_opdump.c,$ext_shared,,$P2C_CFLAGS)
 fi
